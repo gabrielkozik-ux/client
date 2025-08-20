@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marek Podnikavý | Zdraví a příležitost se Zinzino</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (ikona v záložce prohlížeče) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+    <style>
+        /* Nastavení základního fontu */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Plynulé scrollování */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Vlastní gradient pro tlačítka a prvky */
+        .zinzino-gradient {
+            background: linear-gradient(90deg, #006470, #0093a0);
+        }
+        .zinzino-gradient-hover:hover {
+            background: linear-gradient(90deg, #00505a, #007a85);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigační lišta -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-gray-800">Marek Podnikavý</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#pribeh" class="text-gray-600 hover:text-cyan-700 transition">Můj příběh</a>
+                <a href="#zdravi" class="text-gray-600 hover:text-cyan-700 transition">Zdraví</a>
+                <a href="#prilezitost" class="text-gray-600 hover:text-cyan-700 transition">Příležitost</a>
+                <a href="#reference" class="text-gray-600 hover:text-cyan-700 transition">Reference</a>
+                <a href="#kontakt" class="zinzino-gradient zinzino-gradient-hover text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-transform transform hover:scale-105">Kontakt</a>
+            </nav>
+            <!-- Mobilní menu (hamburger) - zde jen ikona, pro plnou funkci by byl potřeba JS -->
+            <button class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero sekce -->
+        <section class="pt-32 pb-16 md:pt-48 md:pb-24 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                        Objevte cestu ke <span class="text-cyan-600">zdraví</span> a finanční <span class="text-cyan-600">nezávislosti</span>.
+                    </h1>
+                    <p class="mt-6 text-lg text-gray-600 max-w-xl mx-auto md:mx-0">
+                        Jmenuji se Marek Podnikavý a jako life-style coach vám ukážu, jak můžete díky vědecky podložené výživě Zinzino zlepšit svůj život a vybudovat si stabilní příjem.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#zdravi" class="zinzino-gradient zinzino-gradient-hover text-white font-bold py-3 px-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 text-center">Chci se cítit lépe</a>
+                        <a href="#prilezitost" class="bg-white text-cyan-700 font-bold py-3 px-8 rounded-lg shadow-lg border border-cyan-700 hover:bg-cyan-50 transition-transform transform hover:scale-105 text-center">Chci podnikat</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="Marek_Podnikavy.jpg" alt="Portrét Marka Podnikavého" class="rounded-2xl shadow-2xl w-full max-w-sm object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x450/e2e8f0/334155?text=Marek+Podnikav%C3%BD';">
+                </div>
+            </div>
+        </section>
+
+        <!-- Můj příběh -->
+        <section id="pribeh" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Moje cesta se Zinzino</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Od únavy a nedostatku energie k vitalitě a novému podnikání.</p>
+                </div>
+                <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Dlouho jsem se potýkal s chronickou únavou a měl pocit, že mi chybí energie na práci i koníčky. Hledal jsem řešení, které by nebylo jen dočasnou náplastí, ale skutečnou změnou. Když jsem objevil Zinzino a jejich filozofii <strong class="text-cyan-700">výživy založené na krevních testech</strong>, všechno se změnilo.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            Po pár měsících užívání BalanceOil jsem cítil neuvěřitelný rozdíl. Moje energie se vrátila, lépe jsem se soustředil a celkově se cítil skvěle. Tento osobní úspěch mě inspiroval natolik, že jsem se rozhodl sdílet tuto příležitost dál. Dnes pomáhám ostatním nejen najít cestu k lepšímu zdraví, ale také k finanční svobodě, kterou tento model podnikání nabízí.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zdravotní benefity -->
+        <section id="zdravi" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Zdraví založené na důkazech</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Přestaňte hádat, co vaše tělo potřebuje. Zjistěte to.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Karta 1: Testování -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+                        <div class="zinzino-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.24a2 2 0 00-1.806.547a2 2 0 00-.547 1.806l.477 2.387a6 6 0 00.517 3.86l.158.318a6 6 0 00.517 3.86l2.387.477a2 2 0 001.806-.547a2 2 0 00.547-1.806l-.477-2.387a6 6 0 00-.517-3.86l-.158-.318a6 6 0 00-.517-3.86l-2.387-.477a2 2 0 00-1.806.547" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">1. Otestujte se</h3>
+                        <p class="text-gray-600">Anonymní test ze suché kapky krve odhalí poměr esenciálních mastných kyselin Omega-6 a Omega-3 ve vašem těle. Zjistíte tak svůj skutečný výživový stav.</p>
+                    </div>
+                    <!-- Karta 2: Obnovení rovnováhy -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+                        <div class="zinzino-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h5M20 20v-5h-5M4 20h5v-5M20 4h-5v5" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">2. Obnovte rovnováhu</h3>
+                        <p class="text-gray-600">Na základě výsledků vám doporučím personalizovaný plán s produkty Zinzino, jako je BalanceOil+, který bezpečně a efektivně obnoví rovnováhu ve vašem těle.</p>
+                    </div>
+                    <!-- Karta 3: Ověření -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg text-center">
+                        <div class="zinzino-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">3. Ověřte si výsledky</h3>
+                        <p class="text-gray-600">Po několika měsících si uděláte druhý test, abyste viděli hmatatelný důkaz svého pokroku. Uvidíte černé na bílém, jak se vaše tělo mění k lepšímu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podnikatelská příležitost -->
+        <section id="prilezitost" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Podnikejte podle sebe. Žijte zdravěji.</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Přidejte se k hnutí, které mění životy. Nabízím vám příležitost k flexibilnímu a smysluplnému podnikání.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl">
+                        <h3 class="text-2xl font-bold mb-4 text-cyan-700">Proč začít se Zinzino?</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong>Nízké riziko:</strong> Vstup do systému je zdarma a díky programu Zinzino4Free můžete mít své produkty zdarma.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong>Stabilní příjem:</strong> Model předplatného zajišťuje předvídatelný, reziduální příjem.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong>Flexibilita:</strong> Pracujte odkudkoliv, kdykoliv a buďte svým vlastním pánem.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><strong>Podpora a komunita:</strong> Získáte mé osobní mentorství a přístup ke globální komunitě a špičkovému školení.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-cyan-700 text-white p-8 rounded-2xl shadow-xl flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-4">Jste připraveni na změnu?</h3>
+                        <p class="mb-6">Ať už hledáte přivýdělek, nebo novou kariéru, ukážu vám, jak na to. Pojďme si nezávazně promluvit o vašich cílech.</p>
+                        <a href="#kontakt" class="bg-white text-cyan-700 font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-cyan-50 transition-transform transform hover:scale-105 text-center">Domluvit si hovor</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reference -->
+        <section id="reference" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Co říkají moji klienti a partneři</h2>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Skutečné příběhy, skutečné výsledky.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Reference 1 (Klient) -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"Díky Markovi a Zinzino testu jsem konečně pochopila, co mému tělu chybí. Po nasazení BalanceOil se cítím jako vyměněná. Více energie, lepší spánek. Doporučuji všem!"</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/e2e8f0/334155?text=JP" alt="Jana P.">
+                            <div>
+                                <p class="font-bold">Jana P.</p>
+                                <p class="text-sm text-gray-500">Manažerka</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reference 2 (Partner) -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"Hledal jsem flexibilní podnikání, které by mělo smysl. Spolupráce s Markem mi otevřela dveře. Jeho podpora a jasná strategie mi pomohly rychle nastartovat a vybudovat si vlastní tým."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/e2e8f0/334155?text=TN" alt="Tomáš N.">
+                            <div>
+                                <p class="font-bold">Tomáš N.</p>
+                                <p class="text-sm text-gray-500">IT specialista & Zinzino Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reference 3 (Klient) -->
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                        <p class="text-gray-600 mb-6">"Jako sportovec řeším výživu neustále. Test od Zinzino byl pro mě zlomový. Marek mi vše skvěle vysvětlil a pomohl mi optimalizovat suplementaci pro lepší výkon i regeneraci."</p>
+                        <div class="flex items-center">
+                            <img class="w-12 h-12 rounded-full mr-4" src="https://placehold.co/100x100/e2e8f0/334155?text=PD" alt="Petr D.">
+                            <div>
+                                <p class="font-bold">Petr D.</p>
+                                <p class="text-sm text-gray-500">Aktivní sportovec</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt / CTA -->
+        <section id="kontakt" class="py-20 zinzino-gradient">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold">Udělejte první krok ještě dnes</h2>
+                <p class="mt-4 text-lg max-w-2xl mx-auto text-cyan-100">Ať už vás zajímá vaše zdraví, nebo nová podnikatelská cesta, jsem tu pro vás. Pojďme si nezávazně popovídat o tom, jak vám mohu pomoci.</p>
+                <div class="mt-8">
+                    <a href="mailto:marek.podnikavy@email.cz" class="bg-white text-cyan-700 font-bold py-4 px-10 rounded-lg shadow-lg text-lg hover:bg-cyan-50 transition-transform transform hover:scale-105 inline-block">
+                        Napište mi e-mail
+                    </a>
+                    <p class="mt-4 text-sm text-cyan-200">nebo mi zavolejte na <a href="tel:+420123456789" class="font-bold hover:underline">+420 123 456 789</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Patička -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-bold text-lg">Marek Podnikavý</p>
+            <p class="text-gray-400">Nezávislý Zinzino Partner</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Zde doplňte odkazy na sociální sítě -->
+                <a href="#" class="text-gray-400 hover:text-white transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.494v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.585.07-4.85c.148-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"/></svg></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            </div>
+            <p class="mt-8 text-sm text-gray-500">&copy; 2025 Marek Podnikavý. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
